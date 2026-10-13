@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CUSTOMISE: replace [YOUR NAME] in the title, description and social tags below -->
+  <title>Sameer Ayoub| Aspiring Software Developer</title>
+  <meta name="description" content="Portfolio of Sameer Ayoub, an MSc IT student and aspiring software developer with a foundation in HTML, CSS, Python, C and Java." />
+  <meta name="author" content="[YOUR NAME]" />
+  <meta name="theme-color" content="#0a0e0d" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Social sharing metadata -->
+  <!-- CUSTOMISE: after publishing, add <meta property="og:url" content="https://your-site-url"> and an og:image (absolute URL) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sameer Ayoub | Aspiring Software Developer" />
+  <meta property="og:description" content="MSc IT student with a strong foundation in programming and web technologies, open to opportunities." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Sameer Ayoub | Aspiring Software Developer" />
+  <meta name="twitter:description" content="MSc IT student with a strong foundation in programming and web technologies, open to opportunities." />
+
+  <!-- Favicon placeholder (inline SVG). CUSTOMISE: replace with <link rel="icon" href="assets/favicon.png"> if you have your own -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0e0d'/%3E%3Cpath d='M24 20 12 32l12 12M40 20l12 12-12 12' fill='none' stroke='%2334d399' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+  <!-- Optional external resources (site still works if these fail to load) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <!-- CUSTOMISE: your name (or set CONFIG.name in script.js to replace every [data-name] automatically) -->
+      <a href="#home" class="logo">
+        <span class="logo-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span data-name>Sameer Ayoub</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-cta">
+            <!-- CUSTOMISE: set CONFIG.resume in script.js (e.g. "assets/resume.pdf") -->
+            <a class="btn btn-primary btn-sm" data-link="resume" download>
+              <i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="glow glow-a"></span>
+        <span class="glow glow-b"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow fade-up">HELLO, I'M</p>
+          <h1 class="hero-name fade-up d1" id="hero-title"><span data-name>Sameer Ayoub</span></h1>
+          <p class="hero-role fade-up d2">Aspiring Software Developer</p>
+          <p class="hero-text fade-up d3">
+            I'm an MSc IT student with a strong foundation in programming and web technologies.
+            I enjoy solving problems, building useful digital experiences, and exploring new technologies.
+          </p>
+          <div class="hero-actions fade-up d4">
+            <a class="btn btn-primary" href="#projects">Explore My Work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            <a class="btn btn-ghost" href="#contact">Get In Touch</a>
+          </div>
+          <p class="tech-label fade-up d5" aria-label="Technologies: HTML, CSS, Python, C, Java">HTML • CSS • Python • C • Java</p>
+        </div>
+
+        <div class="hero-visual fade-up d2">
+          <div class="avatar-frame">
+            <!-- CUSTOMISE: set CONFIG.profileImage in script.js (e.g. "assets/profile.jpg"). Placeholder shows until then. -->
+            <div class="avatar" id="avatar" role="img" aria-label="Profile photo placeholder">
+              <div class="avatar-placeholder">
+                <i class="fa-regular fa-user" aria-hidden="true"></i>
+                <span>Profile photo placeholder</span>
+                <small>Replace with your own photo</small>
+              </div>
+            </div>
+            <p class="availability"><span class="pulse-dot" aria-hidden="true"></span>Open to Opportunities</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+         
+          <h2 class="section-title" id="about-title">A Little About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <!-- CUSTOMISE: edit these paragraphs to match your own voice. Keep them truthful. -->
+            <p>
+              I'm an MSc IT student with a growing passion for software development and programming.
+              I enjoy turning ideas into working code and understanding how things work behind the scenes.
+            </p>
+            <p>
+              I have a good understanding of HTML and CSS for building clean, responsive web pages, along with
+              programming knowledge in Python, C, and Java. I'm actively working on improving my problem-solving
+              skills by practising regularly and taking on new challenges.
+            </p>
+            <p>
+              I'm motivated to build practical projects that turn what I learn into something real. As a fresher,
+              I'm eager to learn from others, collaborate with teams, and grow into a capable developer.
+            </p>
+          </div>
+
+          <div class="info-cards">
+            <article class="info-card reveal d1">
+              <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+              <div>
+                <p class="info-label">Education</p>
+                <p class="info-value">MSc IT Student</p>
+              </div>
+            </article>
+            <article class="info-card reveal d2">
+              <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-seedling"></i></span>
+              <div>
+                <p class="info-label">Experience</p>
+                <p class="info-value">Fresher</p>
+              </div>
+            </article>
+            <article class="info-card reveal d3">
+              <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
+              <div>
+                <p class="info-label">Career Focus</p>
+                <p class="info-value">Software Development</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="skills-title">Technical Skills</h2>
+          <p class="section-lead">The technologies I'm working with and continuing to build on.</p>
+        </div>
+
+        <!--
+           TO ADD A SKILL LATER:
+          Copy one <article class="skill-card reveal"> block below into the right grid, then change the
+          icon class, name and description. To add a new category, copy a whole <div class="skill-group"> block.
+        -->
+
+    
+<!-- Full-Stack Development -->
+<div class="skill-group">
+  <h3 class="skill-group-title reveal">Full-Stack Development</h3>
+
+  <div class="skill-grid">
+
+    <article class="skill-card reveal">
+      <span class="skill-icon" aria-hidden="true">
+        <i class="fa-brands fa-html5"></i>
+      </span>
+      <h4 class="skill-name">HTML5</h4>
+      <p class="skill-desc">
+        Building semantic, accessible, and well-structured web pages.
+      </p>
+    </article>
+
+    <article class="skill-card reveal d1">
+      <span class="skill-icon" aria-hidden="true">
+        <i class="fa-brands fa-css3-alt"></i>
+      </span>
+      <h4 class="skill-name">CSS3</h4>
+      <p class="skill-desc">
+        Creating responsive layouts, modern interfaces, and smooth animations.
+      </p>
+    </article>
+
+    <article class="skill-card reveal d2">
+      <span class="skill-icon" aria-hidden="true">
+        <i class="fa-brands fa-js"></i>
+      </span>
+      <h4 class="skill-name">JavaScript</h4>
+      <p class="skill-desc">
+        Developing interactive user interfaces and dynamic web functionality.
+      </p>
+    </article>
+
+    <article class="skill-card reveal">
+      <span class="skill-icon" aria-hidden="true">
+        <i class="fa-solid fa-code"></i>
+      </span>
+      <h4 class="skill-name">C# & .NET</h4>
+      <p class="skill-desc">
+        Learning backend development, ASP.NET Core MVC, and web application architecture.
+      </p>
+    </article>
+
+  </div>
+</div>
+
+<!-- Machine Learning -->
+<div class="skill-group">
+  <h3 class="skill-group-title reveal">Machine Learning & Data Science</h3>
+
+  <div class="skill-grid">
+
+    <article class="skill-card reveal">
+      <span class="skill-icon" aria-hidden="true">
+        <i class="fa-brands fa-python"></i>
+      </span>
+      <h4 class="skill-name">Python</h4>
+      <p class="skill-desc">
+        Writing Python programs and developing a foundation for machine learning.
+      </p>
+    </article>
+
+    <article class="skill-card reveal d1">
+      <span class="skill-icon" aria-hidden="true">
+        <i class="fa-solid fa-table"></i>
+      </span>
+      <h4 class="skill-name">NumPy & Pandas</h4>
+      <p class="skill-desc">
+        Working with numerical data, datasets, data cleaning, and preprocessing.
+      </p>
+    </article>
+
+    <article class="skill-card reveal d2">
+      <span class="skill-icon" aria-hidden="true">
+        <i class="fa-solid fa-chart-line"></i>
+      </span>
+      <h4 class="skill-name">Data Analysis & Visualization</h4>
+      <p class="skill-desc">
+        Exploring datasets and visualizing patterns using Matplotlib.
+      </p>
+    </article>
+
+    <article class="skill-card reveal">
+      <span class="skill-icon" aria-hidden="true">
+        <i class="fa-solid fa-brain"></i>
+      </span>
+      <h4 class="skill-name">Machine Learning</h4>
+      <p class="skill-desc">
+        Currently focusing on data preprocessing, model training, and supervised and unsupervised learning.
+      </p>
+    </article>
+
+  </div>
+</div>
+
+
+        <div class="skill-group">
+          <h3 class="skill-group-title reveal">Programming Languages</h3>
+          <div class="skill-grid">
+            <article class="skill-card reveal">
+              <span class="skill-icon" aria-hidden="true"><i class="fa-brands fa-python"></i></span>
+              <h4 class="skill-name">Python</h4>
+              <p class="skill-desc">Programming fundamentals, scripting and problem-solving.</p>
+            </article>
+            <article class="skill-card reveal d1">
+              <!-- Font Awesome has no "C" icon, so a text glyph keeps the style consistent -->
+              <span class="skill-icon skill-icon-text" aria-hidden="true">C</span>
+              <h4 class="skill-name">C</h4>
+              <p class="skill-desc">Core programming concepts and how programs work close to the machine.</p>
+            </article>
+            <article class="skill-card reveal d2">
+              <span class="skill-icon" aria-hidden="true"><i class="fa-brands fa-java"></i></span>
+              <h4 class="skill-name">Java</h4>
+              <p class="skill-desc">Object-oriented programming and core language concepts.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="projects-title">Projects</h2>
+          <p class="section-lead">Project spaces I'm building out. Links appear automatically once configured.</p>
+        </div>
+
+       
+        <div class="project-grid">
+
+          <!-- PROJECT 1 (placeholder: customise) -->
+          <article class="project-card reveal" data-project="portfolio">
+            <div class="project-media" aria-label="Project screenshot placeholder">
+              <div class="project-placeholder">
+                <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                <span>Portfolio website</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-number">01</span>
+                <span class="project-status">Links not added yet</span>
+              </div>
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-desc">A personal website showcasing my technical skills, education, and projects.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" data-project-link="live"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo</a>
+                <a class="btn btn-ghost btn-sm" data-project-link="source"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 (placeholder: customise) -->
+          <article class="project-card reveal d1" data-project="python">
+            <div class="project-media" aria-label="Project screenshot placeholder">
+              <div class="project-placeholder">
+                <i class="fa-brands fa-python" aria-hidden="true"></i>
+                <span>Programming with Python</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-number">02</span>
+                <span class="project-status">Links not added yet</span>
+              </div>
+              <h3 class="project-title">Python Programming Projects</h3>
+              <p class="project-desc">A collection of Python programs demonstrating programming fundamentals, problem-solving, and practical coding.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">Python</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-ghost btn-sm" data-project-link="source"><i class="fa-brands fa-github" aria-hidden="true"></i> Source Code</a>
+              </div>
+            </div>
+          </article>
+
+
+<!-- PROJECT 3: MED CLARIVO+ -->
+<article class="project-card reveal d2" data-project="med-clarivo">
+
+  <div class="project-media" aria-label="Med Clarivo+ website preview">
+    <div class="project-placeholder">
+      <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+      <span>Med Clarivo+ — NEET Mentorship</span>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="project-meta">
+      <span class="project-number">03</span>
+      <span class="project-status">Live Project</span>
+    </div>
+
+    <h3 class="project-title">Med Clarivo+</h3>
+
+    <p class="project-desc">
+      A NEET mentorship platform designed to help aspirants with
+      personalized guidance, mentor booking, study planning, and
+      progress tracking. Built with a responsive medical-themed UI
+      and Firebase integration for booking management.
+    </p>
+
+    <ul class="tag-list" aria-label="Technologies used">
+      <li class="tag">HTML</li>
+      <li class="tag">CSS</li>
+      <li class="tag">JavaScript</li>
+      <li class="tag">Firebase</li>
+      <li class="tag">Responsive Design</li>
+    </ul>
+
+    <div class="project-actions">
+
+      <a
+        class="btn btn-ghost btn-sm"
+        href="https://github.com/samAyoubSheikh/Med---Clarivo"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+        Source Code
+      </a>
+    </div>
+  </div>
+
+</article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section section-alt" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title" id="education-title">Education</h2>
+        </div>
+
+        <!-- CUSTOMISE (optional): add your university name inside each .timeline-card when you want to -->
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <article class="timeline-card">
+              <span class="status-chip status-current"><span class="pulse-dot" aria-hidden="true"></span>Currently Pursuing</span>
+              <h3 class="timeline-degree">Master of Science in Information Technology (MSc IT)</h3>
+              <h5 style="text-align: right;">Islamic University Of Science and Technology, Kashmir</h5>
+
+            </article>
+          </li>
+          <li class="timeline-item reveal d1">
+            <article class="timeline-card">
+              <span class="status-chip status-done"><i class="fa-solid fa-check" aria-hidden="true"></i>Completed 2025</span>
+              <h3 class="timeline-degree">Bachelor of Science in Information Technology (BSc IT)</h3>
+              <h5 style="text-align: right;">University of Kashmir</h5>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== CURRENTLY GROWING ===================== -->
+    <section class="section" id="growing" aria-labelledby="growing-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label">// goals</p>
+          <h2 class="section-title" id="growing-title">Currently Growing</h2>
+          <p class="section-lead">The areas I'm actively working on as I begin my career.</p>
+        </div>
+
+        <div class="goal-grid">
+          <article class="goal-card reveal">
+            <span class="goal-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></span>
+            <p>Strengthening programming fundamentals</p>
+          </article>
+          <article class="goal-card reveal d1">
+            <span class="goal-icon" aria-hidden="true"><i class="fa-solid fa-hammer"></i></span>
+            <p>Developing practical projects</p>
+          </article>
+          <article class="goal-card reveal d2">
+            <span class="goal-icon" aria-hidden="true"><i class="fa-solid fa-puzzle-piece"></i></span>
+            <p>Improving problem-solving abilities</p>
+          </article>
+          <article class="goal-card reveal d3">
+            <span class="goal-icon" aria-hidden="true"><i class="fa-solid fa-compass"></i></span>
+            <p>Exploring software development opportunities</p>
+          </article>
+          <article class="goal-card reveal d4">
+            <span class="goal-icon" aria-hidden="true"><i class="fa-solid fa-book-open"></i></span>
+            <p>Continuously learning new technologies</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-label">// contact</p>
+          <h2 class="section-title" id="contact-title">Let's Connect</h2>
+          <p class="section-lead">I'm open to internships and entry-level opportunities. Send me a message or find me online.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-links reveal">
+            <!-- CUSTOMISE: set CONFIG.email, CONFIG.github and CONFIG.linkedin in script.js -->
+            <a class="contact-link" data-link="email">
+              <span class="contact-link-icon" aria-hidden="true"><i class="fa-regular fa-envelope"></i></span>
+              <span>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value" data-link-text="email">Add your email in script.js</span>
+              </span>
+            </a>
+            <a class="contact-link" data-link="github">
+              <span class="contact-link-icon" aria-hidden="true"><i class="fa-brands fa-github"></i></span>
+              <span>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value" data-link-text="github">Add your GitHub URL in script.js</span>
+              </span>
+            </a>
+            <a class="contact-link" data-link="linkedin">
+              <span class="contact-link-icon" aria-hidden="true"><i class="fa-brands fa-linkedin-in"></i></span>
+              <span>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value" data-link-text="linkedin">Add your LinkedIn URL in script.js</span>
+              </span>
+            </a>
+          </div>
+
+          <form class="contact-form reveal d1" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" required />
+                <p class="field-error" id="name-error"></p>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error" required />
+                <p class="field-error" id="email-error"></p>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" aria-describedby="subject-error" required />
+              <p class="field-error" id="subject-error"></p>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" aria-describedby="message-error" required></textarea>
+              <p class="field-error" id="message-error"></p>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+              <i class="fa-regular fa-paper-plane" aria-hidden="true"></i> Open Email Draft
+            </button>
+
+            <p class="form-note">
+              This is a static website with no server. Submitting opens a pre-filled draft in your email app,
+              and you'll need to press send there to deliver it.
+            </p>
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-name" data-name>Sameer Ayoub</p>
+        <p class="footer-tagline">Learning, building, and growing one project at a time.</p>
+      </div>
+      <div class="footer-social">
+        <a class="icon-link" data-link="github" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        <a class="icon-link" data-link="linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      </div>
+      <p class="footer-copy">&copy; <span data-year>2026</span> <span data-name>[YOUR NAME]</span>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
