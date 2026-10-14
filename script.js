@@ -27,7 +27,7 @@
 
     // Path to your résumé file, relative to index.html.
     // Example: 'assets/resume.pdf'
-    resume: 'assets/Resume.pdf',
+    resume: 'assets/Sameer_Ayoub_Resume.pdf',
 
     // Path to your profile photo, relative to index.html.
     // Example: 'assets/profile.jpg'
